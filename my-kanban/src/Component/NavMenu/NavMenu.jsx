@@ -1,11 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../../assets/my-kanban-logo.png'
 
 const NavMenu = () => {
     return (
-        <div className='container mx-auto py-7'>
+        <div className='container mx-auto pt-6'>
             <div className="navbar__main flex justify-between">
                 <div className="logo">
-                    <h1>Kanban</h1>
+                    <Link to='/'><img src={logo} alt="" /></Link>
                 </div>
                 <div className="menu__items">
                     <ul className='lg:flex font-semibold items-center'>
